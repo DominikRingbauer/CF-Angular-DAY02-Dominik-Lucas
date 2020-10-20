@@ -1,0 +1,35 @@
+<div class="container mt-5">
+	<h1>Contact us</h1>
+<form [formGroup]="info" (ngSubmit)="onSubmit()">
+ 
+ <label>
+   First Name:
+   <input type="text" formControlName="firstName">
+ </label><br>
+
+ <label>
+   Last Name:
+   <input type="text" formControlName="lastName">
+ </label><br>
+
+ <label>
+   Age:
+   <input type="text" formControlName="age">
+ </label><br>
+
+ <label>
+   Email:
+   <input type="text" formControlName="email">
+ </label><br>
+
+ <label>
+   Meassage:
+   <input type="text" formControlName="text">
+ </label><br>
+
+
+ 
+ <input type="submit" class="btn btn-primary" value="Submit">
+
+</form>
+</div>
