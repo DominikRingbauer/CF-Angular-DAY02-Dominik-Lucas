@@ -1,35 +1,30 @@
 <div class="container mt-5">
 	<h1>Contact us</h1>
-<form [formGroup]="info" (ngSubmit)="onSubmit()">
+
+
+<div class="d-flex">
+
+	<div id="left">
+		<p>First Name:</p>
+		<p>Last Name:</p>
+		<p>Age:</p>
+		<p>E-Mail:</p>
+		<p>Message:</p>
+	</div>
+
+
+	<div id="right" class="ml-1">
+		<form [formGroup]="info">
+			<p><input type="text" formControlName="firstName"></p>
+			<p><input type="text" formControlName="lastName"></p>
+			<p><input type="text" formControlName="age"></p>
+			<p><input type="text" formControlName="email"></p>
+			<p><input type="text" formControlName="text"></p>
+			<button (click)="onSubmit()" class="btn btn-primary" type="submit">Submit</button>
+		</form>
+
+		
+	</div>
+</div>
  
- <label>
-   First Name:
-   <input type="text" formControlName="firstName">
- </label><br>
-
- <label>
-   Last Name:
-   <input type="text" formControlName="lastName">
- </label><br>
-
- <label>
-   Age:
-   <input type="text" formControlName="age">
- </label><br>
-
- <label>
-   Email:
-   <input type="text" formControlName="email">
- </label><br>
-
- <label>
-   Meassage:
-   <input type="text" formControlName="text">
- </label><br>
-
-
- 
- <input type="submit" class="btn btn-primary" value="Submit">
-
-</form>
 </div>

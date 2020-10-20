@@ -8,7 +8,41 @@
       	<li>{{x.color}}</li>
       	<li>{{x.price}} €/per Day</li>
       </ul>
-      
     </div>
   </div>
+
+  <h1>Add cars</h1>
+
+
+<div class="d-flex">
+
+  <div id="left">
+    <p>Image:</p>
+    <p>Brand:</p>
+    <p>Type:</p>
+    <p>Color:</p>
+    <p>Price:</p>
+  </div>
+
+
+  <div id="right" class="ml-1">
+    <form [formGroup]="info">
+      <p><input type="text" formControlName="image"></p>
+      <p><input type="text" formControlName="brand"></p>
+      <p><input type="text" formControlName="type"></p>
+      <p><input type="text" formControlName="color"></p>
+      <p><input type="text" formControlName="price"></p>
+      <button (click)="addCar()" class="btn btn-primary" type="submit">Add car</button>
+    </form>
+
+    
+  </div>
 </div>
+ 
+
+</div>
+
+     
+ 
+
+
