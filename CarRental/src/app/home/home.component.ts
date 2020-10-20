@@ -18,25 +18,25 @@ export class HomeComponent implements OnInit {
 	cars = [{
 		brand:"Audi",
 		type:"A8",
-		image:"/assets/Audi.jpg",
+		image:"Audi.jpg",
 		color:"red",
 		price:5000
 	},{
 		brand:"BMW",
 		type:"M4",
-		image:"/assets/bmw.jpg",
+		image:"bmw.jpg",
 		color:"blue",
 		price:3000
 	},{
 		brand:"Mercedes",
 		type:"Amg-GT",
-		image:"/assets/mercedes.jpg",
+		image:"mercedes.jpg",
 		color:"silver",
 		price:12000
 	},{
 		brand:"Porsche",
 		type:"Carrerra GT",
-		image:"/assets/porsche.png",
+		image:"porsche.png",
 		color:"silver",
 		price:29000
 	}]
@@ -47,6 +47,10 @@ export class HomeComponent implements OnInit {
 
     if(this.info.valid){
       var a = this.info.value;
+      /*var b = this.info.value.image.substring(12);
+      console.log(b);
+      a.image.splice(0, 0, b);*/
+      console.log(a);
       this.cars.push(a);
       console.log(this.cars);
    }
